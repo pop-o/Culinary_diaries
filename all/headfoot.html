@@ -1,0 +1,85 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Diaries</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+
+</head>
+<body >
+  <nav class="w-full h-20 bg-cover bg-fixed bg-center" style="background-image:url('dark.jpg'); ">
+            
+    <header class="text-black body-font">
+
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+             <a class=" title-font font-medium  text-gray-900 mb-4 md:mb-0 cursor-pointer" href="home.html">
+
+                 <span class="ml-7 text-xl hover:text-white">Culinary Diaries</span>
+            </a>
+
+     <nav class="md:ml-auto flex flex-wrap items-center text-base">
+       
+
+      <a class="mr-5 cursor-pointer transition duration-1000 ease-in-out hover:text-white hover:font-bold " href="home.html">Home</a>
+          <a class="mr-5 cursor-pointer transition duration-1000 ease-in-out hover:text-white hover:font-bold ">Categories</a>
+          <a class="mr-5 cursor-pointer transition duration-1000 ease-in-out hover:text-white hover:font-bold " href="about.html">About</a>
+          <a class="mr-5 cursor-pointer transition duration-1000 ease-in-out hover:text-white hover:font-bold " href="contact.html">Contact</a>
+            <div class="relative hidden md:block">
+               
+                <input type="text" id="myInput" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+              </div>
+              <button  type="submit" class="flex p-2 rounded-lg border-gray-300 border-2 " id="myBtn" onclick="javascript:alert('Hello World!') "><i class="fa fa-search hover:text-white hover:animate-spin"></i> </button>
+
+        </nav>
+                     <button onclick="document.location='login.html'" class="ml-2 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 hover:animate-spin-slow">Login
+                    
+        </button>
+        </div>
+            </header>
+       
+
+
+</nav>
+    <footer class="text-gray-600 body-font ">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="home.html">
+          
+          <span class="ml-3 text-xl">Culinary Diaries</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 select-none">© CULINARY DIARIES —
+          <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@culdiar</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="fa fa-facebook bg-blue-700 text-white rounded-full p-4 ml-1 mr-1 hover:text-black hover:animate-bounce  ">
+            
+          </a>
+          <a class="fa fa-twitter bg-sky-500 text-white rounded-full p-4 ml-1 mr-1  hover:text-black hover:animate-bounce  ">
+            
+          </a>
+          <a class="fa fa-instagram bg-gradient-to-br bg-red-600 text-white rounded-full p-4 ml-1 mr-1  hover:text-black hover:animate-bounce  ">
+            
+          </a>
+          <a class="fa fa-linkedin bg-sky-700 text-white rounded-full p-4 ml-1 mr-1 hover:text-black hover:animate-bounce">
+            
+          </a>
+        </span>
+      </div>
+    </footer>
+    <!-- actions -->
+    <script>
+        var input = document.getElementById("myInput");
+        input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("myBtn").click();
+          }
+        });
+        </script>
+
+</body>
+</html>
